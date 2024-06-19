@@ -11,6 +11,7 @@ body{
     background-image: url(./abstract-mixed-color-background-lights-260nw-1176959383.jpg);
     background-size: cover; 
     background-repeat: no-repeat;
+	margin-bottom: 10px;
 }
 
 .navbar{
@@ -57,6 +58,9 @@ margin-bottom: 10px;
 background-color: black;
 cursor: pointer;
 }
+.container{
+	margin-bottom: 50px;
+}
 
 .nav-menu{
 	position: fixed;
@@ -83,8 +87,9 @@ cursor: pointer;
 	display: none;
 }
 
+
 /* for Desktop view */
-@media screen and (min-width:600px){
+@media screen and (min-width:885px){
 	.navbar{
 		justify-content: space-around;
 	}
@@ -92,8 +97,12 @@ cursor: pointer;
 		display: block;
 		position: static;
 		width: auto;
-		margin-right:20px;
+
 		background: none;
+
+		backdrop-filter: none;
+
+		z-index: 5;
 	}
 	.nav-menu a{
 		display: inline-block;
